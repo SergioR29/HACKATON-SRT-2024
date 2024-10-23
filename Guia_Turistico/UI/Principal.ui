@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Guía Turístico</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="QIcon::ThemeIcon::GoHome"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>35</y>
+      <width>631</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 600 24pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>¿A qué parte del sitio elegido quieres ir?</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>150</y>
+      <width>631</width>
+      <height>64</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="commandLinkButton">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>250</y>
+      <width>172</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Buscar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSitio">
+    <property name="title">
+     <string>Sitio</string>
+    </property>
+    <addaction name="actionVer_Direcci_n"/>
+    <addaction name="actionPartes"/>
+   </widget>
+   <widget class="QMenu" name="menuMapa">
+    <property name="title">
+     <string>Mapa</string>
+    </property>
+    <addaction name="actionRefrescar"/>
+    <addaction name="actionVer_Mapa"/>
+   </widget>
+   <addaction name="menuSitio"/>
+   <addaction name="menuMapa"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionRefrescar">
+   <property name="text">
+    <string>Refrescar</string>
+   </property>
+  </action>
+  <action name="actionVer_Direcci_n">
+   <property name="text">
+    <string>Ver Dirección</string>
+   </property>
+  </action>
+  <action name="actionVer_Mapa">
+   <property name="text">
+    <string>Ver Mapa</string>
+   </property>
+  </action>
+  <action name="actionPartes">
+   <property name="text">
+    <string>Partes</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
