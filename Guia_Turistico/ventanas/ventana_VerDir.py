@@ -1,14 +1,10 @@
 from PySide6.QtWidgets import *
-from vistas.ui_Principal import Ui_MainWindow
+from vistas.ui_Ver_Dir import Ui_dir
 
-class MiApp(QMainWindow, Ui_MainWindow):
+class MiApp(QWidget, Ui_dir):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        
-        self.actionVer_Direcci_n.triggered.connect(self.label)
-        
-    def mostrarDir(self):
         
 import sys  
  
